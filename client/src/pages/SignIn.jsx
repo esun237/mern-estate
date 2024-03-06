@@ -32,6 +32,11 @@ export default function SignIn() {
         },
         body: JSON.stringify(formData),
       });
+
+      if (!res.ok) {
+        throw new Error(`HTTP error! status: ${res.status}`);
+      }
+
       const data = await res.json();
       console.log("This is the data after fetching:", data);
       if (data.success === false) {
