@@ -18,6 +18,11 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+
+    avartar: {
+      type: String,
+      default: "/client/public/images/profile.png",
+    },
   },
   { timestamps: true }
 );
