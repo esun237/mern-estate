@@ -19,9 +19,9 @@ const userSchema = new mongoose.Schema(
       required: true,
     },
 
-    avartar: {
+    avatar: {
       type: String,
-      default: "/client/public/images/profile.png",
+      default: "/images/profile.png",
     },
   },
   { timestamps: true }
